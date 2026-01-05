@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond · Nandini Gantayat</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Beyond the research - interests and contact">
+  <style>
+    .beyond-page {
+      max-width: 1400px;
+      width: 100%;
+      padding: 0 4rem;
+    }
+    
+    .beyond-intro {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    
+    .full-interests-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 5rem;
+      width: 100%;
+    }
+    
+    @media (max-width: 1200px) {
+      .full-interests-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .full-interests-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .beyond-page {
+        padding: 0 2rem;
+      }
+    }
+    
+    .interest-card {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: 4px;
+      transition: all 0.4s ease;
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.02), transparent);
+    }
+    
+    .interest-card:hover {
+      border-color: rgba(255, 255, 255, 0.25);
+      background: rgba(255, 255, 255, 0.03);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .interest-card .icon {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+      opacity: 0.8;
+    }
+    
+    .interest-card h4 {
+      font-family: 'Questrial', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--text-primary);
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.02em;
+    }
+    
+    .interest-card p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    
+    .contact-wide {
+      text-align: center;
+      padding: 4rem 0;
+      border-top: 1px solid var(--border-subtle);
+      width: 100%;
+    }
+    
+    .contact-wide h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 2.5rem;
+      color: var(--text-primary);
+    }
+    
+    .contact-row {
+      display: flex;
+      justify-content: center;
+      gap: 5rem;
+      flex-wrap: wrap;
+    }
+    
+    .contact-item {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.95rem;
+      letter-spacing: 0.03em;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    
+    .contact-item:hover {
+      color: var(--text-primary);
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    }
+    
+    .contact-item .label {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-links">
+      <a href="index.html">About</a>
+      <a href="research.html">Research Spine</a>
+      <a href="journey.html">Journey</a>
+      <a href="beyond.html">Beyond</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-content" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+      <h1 class="page-title">Beyond</h1>
+      
+      <div class="beyond-page">
+        <p class="beyond-intro" style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.3rem; color: var(--text-secondary); line-height: 1.8;">
+          Polymathic adaptation makes me push past the conventional boxed boundaries of society.
+        </p>
+
+        <div class="full-interests-grid">
+          <div class="interest-card">
+            <div class="icon">♟</div>
+            <h4>Chess</h4>
+            <p>Strategic thinking as meditation</p>
+          </div>
+
+          <div class="interest-card">
+            <div class="icon">φ</div>
+            <h4>Philosophy</h4>
+            <p>Read Brothers Karamazov in a day ;)</p>
+          </div>
+
+          <div class="interest-card">
+            <div class="icon">◎</div>
+            <h4>Running</h4>
+            <p>Endurance as practice</p>
+          </div>
+
+          <div class="interest-card">
+            <div class="icon">⬡</div>
+            <h4>Powerlifting</h4>
+            <p>Strength through discipline</p>
+          </div>
+
+          <div class="interest-card">
+            <div class="icon">△</div>
+            <h4>Hiking</h4>
+            <p>Mountains as perspective</p>
+          </div>
+
+          <div class="interest-card">
+            <div class="icon">✈</div>
+            <h4>Traveling</h4>
+            <p>Adapting to new cities & systems</p>
+          </div>
+
+          <div class="interest-card">
+            <div class="icon">◐</div>
+            <h4>Painting</h4>
+            <p>Visual intuition</p>
+          </div>
+
+          <div class="interest-card">
+            <div class="icon">♪</div>
+            <h4>Guitar</h4>
+            <p>Pattern recognition through sound</p>
+          </div>
+
+          <div class="interest-card">
+            <div class="icon">∿</div>
+            <h4>Languages</h4>
+            <p>English & French fluency + 6 Indian languages</p>
+          </div>
+
+          <div class="interest-card">
+            <div class="icon">✎</div>
+            <h4>Writing</h4>
+            <p>Essays & structured thinking</p>
+          </div>
+        </div>
+
+        <div class="contact-wide">
+          <h3>Connect</h3>
+          <div class="contact-row">
+            <a href="/cdn-cgi/l/email-protection#5b353a353f3235323c3a352f3a223a2f1b3c363a323775383436" class="contact-item">
+              <span>✉</span>
+              <span class="__cf_email__" data-cfemail="7e101f101a171017191f100a1f071f0a3e19131f1712501d1113">[email&#160;protected]</span>
+            </a>
+            <a href="https://www.linkedin.com/in/nandinigantayat/" target="_blank" rel="noopener" class="contact-item">
+              <span>in</span>
+              linkedin.com/in/nandinigantayat
+            </a
