@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Spine · Nandini Gantayat</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Research portfolio in Quantum Machine Learning">
+  <style>
+    .pillar-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      max-width: 1200px;
+      width: 100%;
+      padding: 0 2rem;
+    }
+    
+    @media (max-width: 900px) {
+      .pillar-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .pillar-card {
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+      border: 1px solid var(--border-subtle);
+      border-radius: 4px;
+      padding: 2rem;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .pillar-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    
+    .pillar-card:hover {
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 255, 255, 0.03);
+    }
+    
+    .pillar-card:hover::before {
+      opacity: 1;
+    }
+    
+    .pillar-number {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+    
+    .pillar-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 1.25rem;
+      color: var(--text-primary);
+      letter-spacing: 0.01em;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+    
+    .pillar-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .pillar-card li {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      padding-left: 1.2rem;
+      position: relative;
+      margin-bottom: 0.4rem;
+    }
+    
+    .pillar-card li::before {
+      content: '·';
+      position: absolute;
+      left: 0;
+      color: var(--text-muted);
+      font-weight: bold;
+    }
+    
+    .pillar-highlight {
+      color: var(--text-primary);
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-links">
+      <a href="index.html">About</a>
+      <a href="research.html">Research Spine</a>
+      <a href="journey.html">Journey</a>
+      <a href="beyond.html">Beyond</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-content" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+      <h1 class="page-title">Research Spine</h1>
+      
+      <div class="pillar-grid">
+        <!-- Pillar 1 -->
+        <article class="pillar-card">
+          <div class="pillar-number">PILLAR 1</div>
+          <h3>Scientific Machine Learning</h3>
+          <ul>
+            <li>Physics-Informed Neural Networks (PINNs)</li>
+            <li>Neural operators & PDE learning</li>
+            <li>Loss balancing & convergence analysis</li>
+            <li>Curse of dimensionality mitigation</li>
+            <li>Geometric deep learning interactions</li>
+            <li>High-level conceptual clarity</li>
+          </ul>
+        </article>
+
+        <!-- Pillar 2 -->
+        <article class="pillar-card">
+          <div class="pillar-number">PILLAR 2</div>
+          <h3>Computational Chemistry & Drug Discovery</h3>
+          <ul>
+            <li>VQE / VQA quantum chemistry methods</li>
+            <li>Catalysis, toxicity, binding energy, force fields</li>
+            <li>Statistical mechanics, DFT, docking</li>
+            <li>AI in molecular modeling</li>
+            <li>RNA-seq & protein structure prediction</li>
+            <li>Topological data analysis for molecules</li>
+          </ul>
+        </article>
+
+        <!-- Pillar 3 -->
+        <article class="pillar-card">
+          <div class="pillar-number">PILLAR 3</div>
+          <h3>Quantum Computing</h3>
+          <ul>
+            <li>QPU architecture & Bell pairs</li>
+            <li>Quantum gates & circuit design</li>
+            <li>Quantum machine learning algorithms</li>
+            <li>Quantum error correction</li>
+            <li class="pillar-highlight">QPoland 2025 Winner</li>
+            <li class="pillar-highlight">Selected in 6 prestigious quantum hackathons</li>
+          </ul>
+        </article>
+
+        <!-- Pillar 4 -->
+        <article class="pillar-card">
+          <div class="pillar-number">PILLAR 4</div>
+          <h3>Data Science Engineering Backbone</h3>
+          <ul>
+            <li>Structured & unstructured data pipelines</li>
+            <li>Systems architecture understanding</li>
+            <li>MLOps tooling & deployment</li>
+            <li>End-to-end pipeline design</li>
+            <li>Data drift monitoring</li>
+            <li>Production ML infrastructure</li>
+          </ul>
+        </article>
+
+        <!-- Pillar 5 -->
+        <article class="pillar-card">
+          <div class="pillar-number">PILLAR 5</div>
+          <h3>Business Acumen</h3>
+          <ul>
+            <li>Pharmaceutical database ecosystems</li>
+            <li>Computational cost structures</li>
+            <li>Industry bottleneck awareness</li>
+            <li>Deployment over papers mindset</li>
+            <li>Pricing & resource optimization</li>
+            <li>Cross-functional stakeholder communication</li>
+          </ul>
+        </article>
+
+        <!-- Pillar 6 -->
+        <article class="pillar-card">
+          <div class="pillar-number">PILLAR 6</div>
+          <h3>High-Performance Computing</h3>
+          <ul>
+            <li>Parallelization strategies</li>
+            <li>Distributed workloads & GPU acceleration</li>
+            <li>Memory bottleneck optimization</li>
+            <li>Scaling operator learning</li>
+            <li>HPC-aware model design</li>
+            <li>Edge computing architectures</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 · Nandini Gantayat</p>
+  </footer>
+</body>
+</html>
